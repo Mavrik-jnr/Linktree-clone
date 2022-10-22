@@ -1,6 +1,19 @@
 @import "~sanitize.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
+h4 {
+  font-size: clamp(18px, 4.5vw, 20px);
+  line-height: clamp(28px, 5vw, 30px);
+  font-weight: 700;
+  color: var(--font-color);
+}
+a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: clamp(14px, 2.5vw, 18px);
+  font-weight: 500;
+  line-height: clamp(20px, 5vw, 28px);
+}
 :root {
   --gray-200: #eaecf0;
   --gray-300: #d0d5dd;
