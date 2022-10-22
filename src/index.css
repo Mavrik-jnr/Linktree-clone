@@ -1,6 +1,15 @@
 @import "~sanitize.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
+:root {
+  --gray-200: #eaecf0;
+  --gray-300: #d0d5dd;
+  --gray-300: #d0d5dd;
+  --gray-400: #98a2b3;
+  --gray-500: #667085;
+  --font-color: #101828;
+  --white: #fcfcfd;
+}
 * {
   font-family: "Inter", sans-serif;
 }
