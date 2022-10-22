@@ -1,8 +1,13 @@
 import React from "react";
-import "./styles/link.module.css";
+import styles from "./styles/link.module.css";
+// import "../index.css";
 
-function Link({ link, text }) {
-  return <a href={link}>{text}</a>;
+function Link({ link, text, linkState }) {
+  return (
+    <a id={styles.a} state={linkState} href={link}>
+      {text}
+    </a>
+  );
 }
 
 export default Link;

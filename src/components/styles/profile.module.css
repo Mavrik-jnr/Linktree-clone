@@ -1,0 +1,13 @@
+#profile__img {
+  display: none;
+  /* width: 2px; */
+}
+
+.profile {
+  height: 100%;
+  background-color: red;
+}
+#hi {
+  display: none;
+  background-color: red;
+}
