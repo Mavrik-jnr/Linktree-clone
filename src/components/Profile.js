@@ -5,7 +5,7 @@ import cameraIcon from "../images/camera-01.svg";
 function Profile() {
   return (
     <>
-      <div className={styles.profile}>
+      <div tabIndex={1} className={styles.profile}>
         <img
           id="profile__img"
           className={styles.profile__img}
