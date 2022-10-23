@@ -1,0 +1,81 @@
+.icon {
+  border: 2px dotted var(--gray-300);
+  border-radius: 20px;
+  padding: 8px;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  position: relative;
+}
+
+.icon:focus {
+  /* display: none; */
+  box-shadow: 0px 0px 0px 5.5px var(--gray-100);
+}
+
+.icon:hover .shareLink,
+.icon:hover .cursor {
+  display: block;
+}
+
+.icon:hover .arrow {
+  /* gray 500 */
+  filter: invert(62%) sepia(24%) saturate(185%) hue-rotate(179deg)
+    brightness(99%) contrast(92%);
+}
+
+.icon[state="disabled"],
+.icon:disabled {
+  border: 2px dotted var(--gray-200);
+  background-color: var(--gray-50);
+}
+
+.icon[state="disabled"] .arrow,
+.icon:disabled .arrow {
+  /* gray 200 */
+  filter: invert(0%) sepia(2%) saturate(0%) hue-rotate(0deg) brightness(100%)
+    contrast(200%);
+}
+.icon[state="disabled"] .shareLink,
+.icon:disabled .shareLink {
+  display: none;
+}
+.icon[state="disabled"] .cursor,
+.icon:disabled .cursor {
+  display: none;
+}
+
+.arrow {
+  /* gray 400 */
+  filter: invert(43%) sepia(9%) saturate(855%) hue-rotate(183deg)
+    brightness(99%) contrast(91%);
+}
+
+.shareLink {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 28px;
+}
+.cursor {
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: 70%;
+}
+.icon[device="mobile"] {
+  background-color: var(--gray-100);
+  border: 2px solid var(--gray-300);
+}
+.icon[device="mobile"] .arrow {
+  filter: invert(62%) sepia(24%) saturate(185%) hue-rotate(179deg)
+    brightness(99%) contrast(92%);
+}
+
+.icon[type="dot"] .shareLink {
+  display: none;
+}
+.icon[type="dot"] .cursor {
+  display: none;
+}
