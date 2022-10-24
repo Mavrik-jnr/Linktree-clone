@@ -3,9 +3,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* width: 100%; */
+  /* max-width: 1440px; */
+}
+.App main {
+  /* display: flex;
+  position: relative;
   flex-direction: column;
+  align-items: center; */
+  /* justify-content: center; */
+  width: clamp(300px, 84.4%, 1440px);
+  /* max-width: 1440px; */
+  min-width: 300px;
+  min-height: 100vh;
+  /* background-color: beige; */
+  padding-top: 64px;
+}
+.profile__section {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  /* gap: 70px; */
+  /* width: 100%; */
+}
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
 .slack {
   display: none;
+}
+.menu {
+  /* display: none; */
+  /* position: sticky; */
+  justify-self: flex-end;
+  position: absolute;
+  top: 44px;
+  right: 10%;
+  /* padding-right: ; */
 }
