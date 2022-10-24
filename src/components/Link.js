@@ -26,15 +26,38 @@ function Link({ link, text, linkState, ID }) {
   //   if (isLeftSwipe || isRightSwipe){}
   //   // add your conditional logic here
   // }
+
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
+  function handleTouchStart(e) {
+    setTouchStart(e.targetTouches[0].clientX);
+  }
+
+  function handleTouchMove(e) {
+    setTouchEnd(e.targetTouches[0].clientX);
+  }
+
+  function handleTouchEnd() {
+    if (touchStart - touchEnd > 1) {
+      // do your stuff here for left swipe
+      setSwipe(styles.swipe);
+    }
+
+    if (touchStart - touchEnd < -1) {
+      // do your stuff here for right swipe
+      setSwipe("");
+    }
+  }
   return (
     <a
       id={ID}
       className={` ${swipe} ${styles.a}`}
       state={linkState}
       href={link}
-      onTouchMove={() => {
-        setSwipe(styles.swipe);
-      }}
+      onTouchStart={(e) => handleTouchStart(e)}
+      onTouchMove={(e) => handleTouchMove(e)}
+      onTouchEnd={(e) => handleTouchEnd(e)}
     >
       {text}
     </a>
