@@ -10,7 +10,7 @@
   /* height: 100%; */
   position: relative;
   /* background-color: red; */
-  /* width: max-content; */
+  width: max-content;
   border-radius: 275px;
   cursor: pointer;
 }
