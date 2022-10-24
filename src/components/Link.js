@@ -38,8 +38,8 @@ function Link({ link, text, linkState, ID }) {
         onTouchEnd={(e) => handleTouchEnd(e)}
       >
         {text}
-        <Icon parentStyle={styles.share} swiped={swipe} device={"mobile"} />
       </a>
+      <Icon parentStyle={styles.share} swiped={swipe} device={"mobile"} />
     </div>
   );
 }
