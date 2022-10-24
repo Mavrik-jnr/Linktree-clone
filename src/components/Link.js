@@ -18,11 +18,11 @@ function Link({ link, text, linkState, ID }) {
   }
 
   function handleTouchEnd() {
-    if (touchStart - touchEnd > 10) {
+    if (touchStart - touchEnd > 18) {
       setSwipe(styles.swipe);
     }
 
-    if (touchStart - touchEnd < -10) {
+    if (touchStart - touchEnd < -18) {
       setSwipe("");
     }
   }
