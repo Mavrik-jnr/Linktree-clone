@@ -8,7 +8,6 @@
   border: 1px solid var(--gray-200);
   border-radius: 8px;
   transition: 0.3s width;
-  /* position: relative; */
 }
 .a:hover {
   background-color: var(--gray-300);
@@ -25,7 +24,6 @@
 }
 
 .swipe {
-  /* display: none; */
   position: inherit;
   width: 70%;
 }

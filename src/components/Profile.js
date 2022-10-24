@@ -12,7 +12,7 @@ function Profile() {
           src={logo}
           alt="Profile"
         />
-        <img src={cameraIcon} className={styles.cam} alt="" />
+        <img src={cameraIcon} className={styles.cam} alt="camera" />
       </div>
     </>
   );
