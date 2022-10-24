@@ -4,6 +4,8 @@ import Profile from "./components/Profile";
 import Icon from "./components/Icon";
 import slack from "./images/slack.svg";
 import github from "./images/Social icon.svg";
+import zuri from "./images/zuri.svg";
+import i4g from "./images/I4G.svg";
 
 function App() {
   return (
@@ -50,11 +52,20 @@ function App() {
             text={"Design Books"}
           />
         </section>
-        <div className="social__icons">
+        <div className={styles.social__icons}>
           <img src={slack} alt="" />
-          <img src={github} alt="" />
+          <a href="https://github.com/Mavrik-jnr/Linktree-clone">
+            <img src={github} alt="" />
+          </a>
         </div>
       </main>
+      <footer className={styles.footer}>
+        <div className={styles.footer__content}>
+          <img src={zuri} alt="" />
+          <p>HNG Intership 9 Frontend Task</p>
+          <img src={i4g} alt="" />
+        </div>
+      </footer>
     </div>
   );
 }
