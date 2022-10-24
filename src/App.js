@@ -2,6 +2,8 @@ import styles from "./App.module.css";
 import Link from "./components/Link";
 import Profile from "./components/Profile";
 import Icon from "./components/Icon";
+import slack from "./images/slack.svg";
+import github from "./images/Social icon.svg";
 
 function App() {
   return (
@@ -48,7 +50,10 @@ function App() {
             text={"Design Books"}
           />
         </section>
-        <div className="social__icons"></div>
+        <div className="social__icons">
+          <img src={slack} alt="" />
+          <img src={github} alt="" />
+        </div>
       </main>
     </div>
   );
