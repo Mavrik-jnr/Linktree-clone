@@ -8,6 +8,7 @@
   border: 1px solid var(--gray-200);
   border-radius: 8px;
   transition: 0.3s width;
+  /* position: relative; */
 }
 .a:hover {
   background-color: var(--gray-300);
@@ -26,8 +27,17 @@
 .swipe {
   /* display: none; */
   position: inherit;
-  width: 50%;
+  width: 70%;
 }
 .def {
   box-shadow: 0px 0px 5px 5px rgba(231, 22, 22, 0.05);
+}
+
+.share {
+  right: -20%;
+  position: absolute;
+}
+
+.container {
+  position: relative;
 }

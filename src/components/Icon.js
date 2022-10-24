@@ -7,7 +7,7 @@ import shape from "../images/Shape.svg";
 import useWindowDimensions from "../useWindow";
 // import icon2 from "../images/share-06.svg";
 
-function Share({ type, device, parentStyle }) {
+function Icon({ type, device, parentStyle, swiped }) {
   const { width } = useWindowDimensions();
   return (
     <div
@@ -15,6 +15,7 @@ function Share({ type, device, parentStyle }) {
       type={width <= 760 && type}
       device={device}
       className={`${parentStyle} ${styles.icon}`}
+      swiped={swiped}
     >
       <img src={width <= 760 ? dot : share} className={styles.arrow} alt="" />
       <img className={styles.shareLink} src={shareLink} alt="" />
@@ -23,4 +24,4 @@ function Share({ type, device, parentStyle }) {
   );
 }
 
-export default Share;
+export default Icon;

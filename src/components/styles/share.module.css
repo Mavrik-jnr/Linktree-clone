@@ -80,3 +80,17 @@
 .icon[type="dot"] .cursor {
   display: none;
 }
+
+.icon[swiped=""] {
+  display: none;
+  opacity: 0;
+
+  /* transition: 1s; */
+  transform: scale(0);
+}
+.icon[swiped="swiped"] {
+  opacity: 1;
+  display: block;
+  transform: scale(1);
+  transition: 1s;
+}
