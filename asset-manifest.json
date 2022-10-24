@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Linktree-clone/static/css/main.209b3476.css",
+    "main.js": "/Linktree-clone/static/js/main.6defafa5.js",
+    "static/media/I4G.svg": "/Linktree-clone/static/media/I4G.601ff0479d970c740e8b7d7ba7821548.svg",
+    "static/media/twit.jpg": "/Linktree-clone/static/media/twit.f929977e254f0b36ef71.jpg",
+    "static/media/shareTool.svg": "/Linktree-clone/static/media/shareTool.6398a6b13150ca18b9d5517888fef67c.svg",
+    "static/media/zuri.svg": "/Linktree-clone/static/media/zuri.0f8c3aa843c87d1f28aa0826858bd0ef.svg",
+    "static/media/Shape.svg": "/Linktree-clone/static/media/Shape.a95c89f88794314a355793eeb109b16e.svg",
+    "static/media/slack.svg": "/Linktree-clone/static/media/slack.6fa75d08a444264c64393c623e71c055.svg",
+    "static/media/Social icon.svg": "/Linktree-clone/static/media/Social icon.05ffca422514a5bbf3ac752e4d893c57.svg",
+    "static/media/camera-01.svg": "/Linktree-clone/static/media/camera-01.62b44a2e1fdb5ee06de6ac721c4d2202.svg",
+    "static/media/Dots.svg": "/Linktree-clone/static/media/Dots.6939a531933a49e19b5836df7b373a07.svg",
+    "static/media/Share.svg": "/Linktree-clone/static/media/Share.e3f81b496e21f13d54272e5772ace63b.svg",
+    "index.html": "/Linktree-clone/index.html",
+    "main.209b3476.css.map": "/Linktree-clone/static/css/main.209b3476.css.map",
+    "main.6defafa5.js.map": "/Linktree-clone/static/js/main.6defafa5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.209b3476.css",
+    "static/js/main.6defafa5.js"
+  ]
+}
