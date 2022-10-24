@@ -17,7 +17,11 @@ function Icon({ type, device, parentStyle, swiped }) {
       className={`${parentStyle} ${styles.icon}`}
       swiped={swiped}
     >
-      <img src={width <= 760 ? dot : share} className={styles.arrow} alt="" />
+      <img
+        src={width <= 760 && device !== "mobile" ? dot : share}
+        className={styles.arrow}
+        alt=""
+      />
       <img className={styles.shareLink} src={shareLink} alt="" />
       <img src={shape} className={styles.cursor} alt="" />
     </div>
