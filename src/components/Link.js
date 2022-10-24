@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Icon from "./Icon";
 import styles from "./styles/link.module.css";
 // import "../index.css";
 
@@ -50,17 +51,20 @@ function Link({ link, text, linkState, ID }) {
     }
   }
   return (
-    <a
-      id={ID}
-      className={` ${swipe} ${styles.a}`}
-      state={linkState}
-      href={link}
-      onTouchStart={(e) => handleTouchStart(e)}
-      onTouchMove={(e) => handleTouchMove(e)}
-      onTouchEnd={(e) => handleTouchEnd(e)}
-    >
-      {text}
-    </a>
+    <div className={styles.container}>
+      <a
+        id={ID}
+        className={` ${swipe} ${styles.a}`}
+        state={linkState}
+        href={link}
+        onTouchStart={(e) => handleTouchStart(e)}
+        onTouchMove={(e) => handleTouchMove(e)}
+        onTouchEnd={(e) => handleTouchEnd(e)}
+      >
+        {text}
+        <Icon parentStyle={styles.share} swiped={swipe} device={"mobile"} />
+      </a>
+    </div>
   );
 }
 
