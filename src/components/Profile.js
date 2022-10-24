@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/gigachad.jpg";
+import logo from "../images/twit.jpg";
 import styles from "./styles/profile.module.css";
 import cameraIcon from "../images/camera-01.svg";
 function Profile() {
