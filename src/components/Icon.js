@@ -10,11 +10,15 @@ function Share({ type, device, parentStyle }) {
   return (
     <div
       tabIndex={1}
-      type={type}
+      type={window.innerWidth >= 768 && type}
       device={device}
       className={`${parentStyle} ${styles.icon}`}
     >
-      <img src={type === "dot" ? dot : share} className={styles.arrow} alt="" />
+      <img
+        src={window.innerWidth <= 768 ? dot : share}
+        className={styles.arrow}
+        alt=""
+      />
       <img className={styles.shareLink} src={shareLink} alt="" />
       <img src={shape} className={styles.cursor} alt="" />
     </div>
