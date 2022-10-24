@@ -7,7 +7,7 @@ function App() {
   return (
     <div className={styles.App}>
       <main>
-        <Icon parentStyle={styles.menu} type="share" />
+        <Icon parentStyle={styles.menu} type="dot" />
         <section className={styles.profile__section}>
           <div className={styles.profile__content}>
             <Profile />
@@ -18,21 +18,38 @@ function App() {
           </div>
         </section>
         <section className={styles.links__section}>
-          <Link text={"Twitter Link"}></Link>
+          <Link
+            link={"https://twitter.com/Maverick__Jnr"}
+            text={"Twitter Link"}
+          />
           <Link
             ID={"btn__zuri"}
             link={"https://training.zuri.team/"}
             text={"Zuri Team"}
           />
-          <Link text={"Zuri Books"} />
-          <Link text={"Python Books"} />
-          <Link text={"Background Check for Coders"} />
-          <Link text={"Design Books"} />
+          <Link
+            ID={"books"}
+            link={"http://books.zuri.team"}
+            text={"Zuri Books"}
+          />
+          <Link
+            ID={"book__python"}
+            link={"http://books.zuri.team"}
+            text={"Python Books"}
+          />
+          <Link
+            ID={"pitch"}
+            link={"https://background.zuri.team"}
+            text={"Background Check for Coders"}
+          />
+          <Link
+            ID={"book__design"}
+            link={"https://books.zuri.team/design-rules"}
+            text={"Design Books"}
+          />
         </section>
+        <div className="social__icons"></div>
       </main>
-
-      {/* <Link link={"https://google.com"} text={"Zuri Books"} />
-       */}
     </div>
   );
 }
