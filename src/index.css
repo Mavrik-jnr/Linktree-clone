@@ -6,6 +6,8 @@ h4 {
   line-height: clamp(28px, 5vw, 30px);
   font-weight: 700;
   color: var(--font-color);
+  text-align: center;
+  margin: 0;
 }
 a {
   text-decoration: none;
