@@ -1,11 +1,10 @@
 import React from "react";
-import styles from "./styles/share.module.css";
+import styles from "./styles/icon.module.css";
 import share from "../images/Share.svg";
 import dot from "../images/Dots.svg";
 import shareLink from "../images/shareTool.svg";
 import shape from "../images/Shape.svg";
 import useWindowDimensions from "../useWindow";
-// import icon2 from "../images/share-06.svg";
 
 function Icon({ type, device, parentStyle, swiped }) {
   const { width } = useWindowDimensions();
