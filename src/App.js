@@ -44,7 +44,9 @@ function App() {
           <Link
             ID={"pitch"}
             link={"https://background.zuri.team"}
-            text={"Background Check for Coders"}
+            text={
+              "Find out more of the building blocks that made your coders who they are today"
+            }
           />
           <Link
             ID={"book__design"}
