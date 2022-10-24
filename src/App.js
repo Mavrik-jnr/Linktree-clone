@@ -45,7 +45,7 @@ function App() {
             ID={"pitch"}
             link={"https://background.zuri.team"}
             text={
-              "Find out more of the building blocks that made your coders who they are today"
+              "Discover the building blocks that make your coders who they are today!"
             }
           />
           <Link
