@@ -48,6 +48,7 @@
 
 .arrow {
   /* gray 400 */
+  width: 100%;
   filter: invert(43%) sepia(9%) saturate(855%) hue-rotate(183deg)
     brightness(99%) contrast(91%);
 }
