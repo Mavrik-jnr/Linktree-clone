@@ -34,12 +34,16 @@ function App() {
           <Link
             ID={"books"}
             link={"http://books.zuri.team"}
-            text={"Zuri Books"}
+            text={
+              "Zuri Books: Learn more about the design and coding world with Zuri's bestselling books"
+            }
           />
           <Link
             ID={"book__python"}
-            link={"http://books.zuri.team"}
-            text={"Python Books"}
+            link={" https://books.zuri.team/python-for-beginners?ref_id=MMTobi"}
+            text={
+              "Python Books: Broaden your path to being a pythonista with Zuri's books on python programming language"
+            }
           />
           <Link
             ID={"pitch"}
@@ -51,7 +55,7 @@ function App() {
           <Link
             ID={"book__design"}
             link={"https://books.zuri.team/design-rules"}
-            text={"Design Books"}
+            text={"Check out the free design books offered by Zuri"}
           />
         </section>
         <div className={styles.social__icons}>
