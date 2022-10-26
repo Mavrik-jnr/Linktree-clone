@@ -17,7 +17,7 @@ function App() {
             <Profile />
             <h4 id="twitter">@Maverick__jnr</h4>
             <h4 id="slack" className={styles.slack}>
-              Toby
+              MMTobi
             </h4>
           </div>
         </section>
