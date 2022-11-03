@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./styles/input.module.css";
 
-function Input({ type, inputPlaceholder, id }) {
+function Input({ type, inputPlaceholder, id, parentClass }) {
   if (type === "message") {
     return (
-      <fieldset>
+      <fieldset className={styles.message}>
         <label htmlFor={type}>Message</label>
         <textarea
           id={type}
@@ -14,7 +14,7 @@ function Input({ type, inputPlaceholder, id }) {
     );
   } else if (type === "agreement") {
     return (
-      <fieldset>
+      <fieldset className={styles.checkbox}>
         <input type="checkbox" id={id} />
         <label htmlFor={id}>
           You agree to providing your data to MMTobi who may contact you
@@ -23,7 +23,7 @@ function Input({ type, inputPlaceholder, id }) {
     );
   }
   return (
-    <fieldset>
+    <fieldset className={`${styles.input} ${parentClass}`}>
       <label htmlFor={id}>{type}</label>
       <input
         id={id}
