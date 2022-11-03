@@ -3,7 +3,7 @@ import Icon from "./Icon";
 import styles from "./styles/link.module.css";
 // import "../index.css";
 
-function Link({ link, text, linkState, ID }) {
+function ELink({ link, text, linkState, ID }) {
   const [swipe, setSwipe] = useState("");
 
   const [touchStart, setTouchStart] = useState(0);
@@ -44,4 +44,4 @@ function Link({ link, text, linkState, ID }) {
   );
 }
 
-export default Link;
+export default ELink;
