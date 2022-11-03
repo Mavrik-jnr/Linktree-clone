@@ -1,11 +1,12 @@
 import styles from "./App.module.css";
-import Link from "./components/Link";
+import ELink from "./components/Link";
 import Profile from "./components/Profile";
 import Icon from "./components/Icon";
 import slack from "./images/slack.svg";
 import github from "./images/Social icon.svg";
 import zuri from "./images/zuri.svg";
 import i4g from "./images/I4G.svg";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -22,41 +23,42 @@ function App() {
           </div>
         </section>
         <section className={styles.links__section}>
-          <Link
+          <ELink
             link={"https://twitter.com/Maverick__Jnr"}
             text={"Twitter Link"}
           />
-          <Link
+          <ELink
             ID={"btn__zuri"}
             link={"https://training.zuri.team/"}
             text={"Zuri Team: Find out more about Zuri here!"}
           />
-          <Link
+          <ELink
             ID={"books"}
             link={"http://books.zuri.team"}
             text={
               "Zuri Books: Learn more about the design and coding world with Zuri's bestselling books"
             }
           />
-          <Link
+          <ELink
             ID={"book__python"}
             link={" https://books.zuri.team/python-for-beginners?ref_id=MMTobi"}
             text={
               "Python Books: Broaden your mind as a pythonista with Zuri's books on the python programming language"
             }
           />
-          <Link
+          <ELink
             ID={"pitch"}
             link={"https://background.zuri.team"}
             text={
               "Discover the building blocks that made your coders who they are today!"
             }
           />
-          <Link
+          <ELink
             ID={"book__design"}
             link={"https://books.zuri.team/design-rules"}
             text={"Check out the free design books offered by Zuri"}
           />
+          <Link></Link>
         </section>
         <div className={styles.social__icons}>
           <img src={slack} alt="" />
