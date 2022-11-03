@@ -29,7 +29,7 @@ function App() {
           <Link
             ID={"btn__zuri"}
             link={"https://training.zuri.team/"}
-            text={"Zuri Team"}
+            text={"Zuri Team: Find out more about Zuri here!"}
           />
           <Link
             ID={"books"}
@@ -42,7 +42,7 @@ function App() {
             ID={"book__python"}
             link={" https://books.zuri.team/python-for-beginners?ref_id=MMTobi"}
             text={
-              "Python Books: Broaden your path to being a pythonista with Zuri's books on python programming language"
+              "Python Books: Broaden your mind as a pythonista with Zuri's books on the python programming language"
             }
           />
           <Link
