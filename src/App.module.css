@@ -75,7 +75,7 @@
 @media screen and (max-width: 768px) {
   .footer__content {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 24px;
   }
   .footer__content img {
