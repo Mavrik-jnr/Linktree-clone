@@ -1,21 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles/input.module.css";
 
 function Input({ type, inputPlaceholder, id, parentClass }) {
+  const [toggle, setToggle] = useState(false);
   if (type === "message") {
     return (
       <fieldset className={styles.message}>
         <label htmlFor={type}>Message</label>
-        <textarea
-          id={type}
-          placeholder="Send me a message and i'll reply as soon as possible"
-        ></textarea>
+        <textarea rows={5} id={type} placeholder={inputPlaceholder}></textarea>
       </fieldset>
     );
   } else if (type === "agreement") {
     return (
       <fieldset className={styles.checkbox}>
-        <input type="checkbox" id={id} />
+        <input
+          type="checkbox"
+          toggle={toggle ? "toggle" : ""}
+          onClick={() => setToggle(!toggle)}
+          id={id}
+        />
         <label htmlFor={id}>
           You agree to providing your data to MMTobi who may contact you
         </label>
