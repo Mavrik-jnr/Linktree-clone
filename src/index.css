@@ -1,6 +1,36 @@
 @import "~sanitize.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
+h3 {
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--font-color);
+  font-weight: 700;
+}
+label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+input,
+textarea {
+  font-size: 1rem;
+  line-height: 24px;
+  padding: 10px 14px;
+  outline: none;
+  border: 1px solid var(--gray-300);
+  border-radius: 8px;
+  color: var(--font-color);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 5%);
+}
+textarea {
+  padding: 12px 14px;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 16px;
+  color: var(--gray-500);
+}
 h4 {
   font-size: clamp(18px, 4.5vw, 20px);
   line-height: clamp(28px, 5vw, 30px);
@@ -24,8 +54,13 @@ a {
   --gray-300: #d0d5dd;
   --gray-400: #98a2b3;
   --gray-500: #667085;
+  --gray-600: #475467;
   --font-color: #101828;
   --white: #fcfcfd;
+
+  --primary-200: #b2ddff;
+  --primary-300: #84caff;
+  --primary-600: #1570ef;
 }
 * {
   font-family: "Inter", sans-serif;
