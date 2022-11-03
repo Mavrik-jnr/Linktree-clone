@@ -58,7 +58,12 @@ function App() {
             link={"https://books.zuri.team/design-rules"}
             text={"Check out the free design books offered by Zuri"}
           />
-          <Link></Link>
+          <ELink
+            ID={"contact"}
+            link={"/contact"}
+            text={"Contact Me"}
+            rrDom={true}
+          />
         </section>
         <div className={styles.social__icons}>
           <img src={slack} alt="" />
