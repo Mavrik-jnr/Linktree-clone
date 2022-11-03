@@ -41,6 +41,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "babel-jest": "^29.2.2",
+    "gh-pages": "^4.0.0",
+    "jest-css-modules-transform": "^4.4.2"
   }
 }
