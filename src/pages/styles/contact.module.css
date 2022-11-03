@@ -1,3 +1,25 @@
+.Contact {
+  text-align: left;
+  padding-top: clamp(64px, 10vw, 92px);
+  padding-inline: 16px;
+}
+h3 {
+  margin: 0;
+  text-align: left;
+}
+h4 {
+  text-align: left;
+  color: #475467;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+.headings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 48px;
+}
 .form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -16,4 +38,21 @@
 }
 .last {
   grid-column: 2/-1;
+}
+
+@media screen and (max-width: 700px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .first {
+    width: 100%;
+    grid-column: 1/-1;
+  }
+  .last {
+    width: 100%;
+    grid-column: 1/-1;
+  }
+  .email {
+    grid-column: 1/-1;
+  }
 }
