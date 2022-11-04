@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles/contact.module.css";
 import Input from "../components/Input";
+import Button from "../components/Button";
 
 function Contact() {
   return (
@@ -36,6 +37,7 @@ function Contact() {
           }
         />
         <Input id={"agreement"} type={"agreement"} />
+        <Button />
       </form>
     </div>
   );
