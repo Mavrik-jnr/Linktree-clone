@@ -46,6 +46,10 @@
   padding: 24px 0px;
   gap: 26.25px;
 }
+.social__icons a {
+  display: flex;
+  align-items: center;
+}
 
 .footer {
   width: 100%;
