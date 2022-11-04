@@ -7,7 +7,12 @@ function Input({ type, inputPlaceholder, id, parentClass }) {
     return (
       <fieldset className={styles.message}>
         <label htmlFor={type}>Message</label>
-        <textarea rows={5} id={type} placeholder={inputPlaceholder}></textarea>
+        <textarea
+          rows={5}
+          id={type}
+          placeholder={inputPlaceholder}
+          required
+        ></textarea>
       </fieldset>
     );
   } else if (type === "agreement") {
@@ -33,6 +38,7 @@ function Input({ type, inputPlaceholder, id, parentClass }) {
         type={type === "Email" ? "email" : "text"}
         placeholder={inputPlaceholder}
         alt={type}
+        required
       />
     </fieldset>
   );
