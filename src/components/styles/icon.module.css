@@ -7,14 +7,14 @@
   width: 40px;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 }
 
 .icon:focus {
   box-shadow: 0px 0px 0px 5.5px var(--gray-100);
 }
 
-.icon:hover .shareLink,
-.icon:hover .cursor {
+.icon:hover .shareLink {
   display: block;
 }
 
