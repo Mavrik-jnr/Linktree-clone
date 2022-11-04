@@ -63,6 +63,7 @@ a {
   --primary-600: #1570ef;
   --primary-700: #175cd3;
   --error: #f89687;
+  --error-text: #f83f23;
 }
 * {
   font-family: "Inter", sans-serif;
