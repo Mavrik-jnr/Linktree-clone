@@ -6,14 +6,16 @@ import slack from "./images/slack.svg";
 import github from "./images/Social icon.svg";
 import zuri from "./images/zuri.svg";
 import i4g from "./images/I4G.svg";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact";
 
 function App() {
   return (
     <div className={styles.App}>
       <Routes>
+        <Route path="*" element={<Navigate to="/" />} />
         <Route
+          index
           path="/"
           element={
             <main>
