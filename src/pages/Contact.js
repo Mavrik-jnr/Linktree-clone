@@ -80,7 +80,7 @@ function Contact() {
           }
         />
         <Input id={"agreement"} type={"agreement"} check={check} />
-        <Button />
+        <Button id={"btn__submit"} />
       </form>
       {completed && <p style={{ color: "green" }}>Message sent</p>}
     </div>
