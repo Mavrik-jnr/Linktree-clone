@@ -11,6 +11,7 @@ function Contact() {
   const [Message, setMessage] = useState("");
   const [Error, setError] = useState(false);
   const [completed, setCompleted] = useState(false);
+  const [check, setCheck] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,6 +24,7 @@ function Contact() {
       Message === ""
     ) {
       setError(true);
+      setCheck(true);
     } else {
       setError(false);
       setFirstName("");
@@ -30,6 +32,7 @@ function Contact() {
       setLastName("");
       setMessage("");
       setCompleted(true);
+      setCheck(false);
     }
   };
   return (
@@ -76,7 +79,7 @@ function Contact() {
             "Send me a message and i'll reply you as soon as possible..."
           }
         />
-        <Input id={"agreement"} type={"agreement"} />
+        <Input id={"agreement"} type={"agreement"} check={check} />
         <Button />
       </form>
       {completed && <p style={{ color: "green" }}>Message sent</p>}

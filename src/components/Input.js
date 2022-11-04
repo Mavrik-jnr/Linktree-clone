@@ -9,6 +9,7 @@ function Input({
   onChange,
   value,
   Error,
+  check,
 }) {
   const [toggle, setToggle] = useState(false);
   if (type === "message") {
@@ -36,7 +37,7 @@ function Input({
           toggle={toggle ? "toggle" : ""}
           onClick={() => setToggle(!toggle)}
           id={id}
-          required
+          required={check}
         />
         <label htmlFor={id}>
           You agree to providing your data to MMTobi who may contact you
