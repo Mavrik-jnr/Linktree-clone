@@ -1,13 +1,18 @@
 .Contact {
+  display: flex;
+  flex-direction: column;
+
   text-align: left;
   padding-top: clamp(64px, 10vw, 92px);
   padding-inline: 16px;
+  width: 50%;
+  max-width: 720px;
 }
-h3 {
+.headings h3 {
   margin: 0;
   text-align: left;
 }
-h4 {
+.headings h4 {
   text-align: left;
   color: #475467;
   font-weight: 400;
@@ -40,7 +45,10 @@ h4 {
   grid-column: 2/-1;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 850px) {
+  .Contact {
+    width: auto;
+  }
   .form {
     grid-template-columns: 1fr;
   }
