@@ -61,6 +61,8 @@ a {
   --primary-200: #b2ddff;
   --primary-300: #84caff;
   --primary-600: #1570ef;
+  --primary-700: #175cd3;
+  --error: #f89687;
 }
 * {
   font-family: "Inter", sans-serif;
