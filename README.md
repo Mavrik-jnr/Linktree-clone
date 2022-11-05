@@ -1,4 +1,4 @@
 # Linktree-clone
 A zuri project similar to linktree
 
-Live Preview: https://mavrik-jnr.github.io/Linktree-clone/
+Live Preview: https://linktree-clone-seven.vercel.app/
