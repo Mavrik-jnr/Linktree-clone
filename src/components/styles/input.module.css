@@ -40,6 +40,21 @@ textarea:focus {
 .msg.Error ::after {
   content: "Please enter a message";
 }
+/* textarea:invalid:focus,
+input:invalid:focus {
+  border: 1px solid var(--error);
+  box-shadow: 0px 0px 0px 4px #ffd3cc;
+} */
+
+/* textarea::after:invalid {
+  content: "stop";
+  position: absolute;
+  left: 0;
+  bottom: -21px;
+  color: var(--error-text);
+  content: "Please enter a name";
+  z-index: 99;
+} */
 
 /* .first{
   display: none;
