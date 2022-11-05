@@ -40,7 +40,8 @@ function Input({
           required={check}
         />
         <label htmlFor={id}>
-          You agree to providing your data to MMTobi who may contact you
+          You agree to providing your data to Mahmoud Mahmoud who may contact
+          you
         </label>
       </fieldset>
     );
