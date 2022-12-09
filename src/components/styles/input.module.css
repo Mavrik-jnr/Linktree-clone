@@ -40,6 +40,8 @@ textarea:focus {
 .msg.Error ::after {
   content: "Please enter a message";
 }
+
+/* For Required attribute */
 /* textarea:invalid:focus,
 input:invalid:focus {
   border: 1px solid var(--error);
